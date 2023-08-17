@@ -13,29 +13,4 @@ public class Man extends Person {
         }
         return false;
     }
-
-    public void registerPartnership(Person partner) {
-        this.setPartner(partner);
-        partner.setPartner(this);
-        if (partner instanceof Woman) {
-            Woman wife = (Woman) partner;
-            wife.setPrevLastName(wife.getLastName());
-            wife.setLastName(this.getLastName());
-        }
-    }
-
-    public void deregisterPartnership(boolean revertLastName) {
-        if (revertLastName) {
-            Person partner = this.getPartner();
-            if (partner != null) {
-                partner.setPartner(null);
-                if (partner instanceof Woman) {
-                    Woman wife = (Woman) partner;
-                    wife.setLastName(wife.getPrevLastName());
-                }
-            }
-        }
-        this.setPartner(null);
-    }
-
 }

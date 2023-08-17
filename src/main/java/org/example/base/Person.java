@@ -15,19 +15,23 @@ public abstract class Person {
         this.lastName = lastName;
         this.age = age;
     }
-    public String getFirstName(){
+
+    public String getFirstName() {
         return firstName;
     }
-    public void setFirstName(String firstName){
+
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    public String getLastName(){
+    public String getLastName() {
         return lastName;
     }
-    public void setLastName(String lastName){
+
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
     public int getAge() {
         return age;
     }
@@ -46,10 +50,39 @@ public abstract class Person {
 
     public abstract boolean isRetired();
 
-    public String getPrevLastName(){
+    public String getPrevLastName() {
         return previousLastName;
     }
-    public void setPrevLastName(String previousLastName){
+
+    public void setPrevLastName(String previousLastName) {
         this.previousLastName = previousLastName;
     }
-}
+
+    public void registerPartnership(Person partner) {
+        if (partner instanceof Woman && this instanceof Man) {
+            partner.setPrevLastName(partner.getLastName());
+            partner.setLastName(this.getLastName());
+            this.setPrevLastName(this.getLastName());
+        } else if (partner instanceof Man && this instanceof Woman) {
+            this.setPrevLastName(this.getLastName());
+            this.setLastName(partner.getLastName());
+            partner.setPrevLastName(partner.getLastName());
+        }
+        this.setPartner(partner);
+        partner.setPartner(this);
+    }
+    public void deregisterPartnership(boolean revertLastName){
+            if (revertLastName) {
+                Person partner = this.getPartner();
+                if (partner != null) {
+                    partner.setPartner(null);
+                    if (partner instanceof Woman && this instanceof Man) {
+                        partner.setLastName(partner.getPrevLastName());
+                    } else if (partner instanceof Man && this instanceof Woman) {
+                        this.setLastName(this.getPrevLastName());
+                    }
+                }
+            }
+            this.setPartner(null);
+        }
+    }

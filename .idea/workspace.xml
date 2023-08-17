@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="674d0b72-3f57-4c12-9ed4-5d253d45c942" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson15/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson15/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson15/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson15/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson15/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson15/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson15/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson15/src/main/java/org/example/Man.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson15/src/main/java/org/example/Woman.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson15/src/main/java/org/example/base/Person.java" beforeDir="false" />
+    <list default="true" id="674d0b72-3f57-4c12-9ed4-5d253d45c942" name="Changes" comment="Added tests to lesson15 project">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Man.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Man.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Woman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Woman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/base/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/base/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PeopleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PeopleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +33,43 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/R_D/GIT/QA-Automation-2.0"
+    "last_opened_file_path": "C:/R_D/GIT/QA-Automation-2.0",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RunManager" selected="TestNG.PeopleTest.testPartnerRegistrationAndDeregistration">
+    <configuration name="PeopleTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lesson15" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PeopleTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PeopleTest.testPartnerRegistrationAndDeregistration" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lesson15" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PeopleTest" />
+      <option name="METHOD_NAME" value="testPartnerRegistrationAndDeregistration" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.PeopleTest.testPartnerRegistrationAndDeregistration" />
+        <item itemvalue="TestNG.PeopleTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -51,5 +80,20 @@
       <updated>1692263976481</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added tests to lesson15 project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tests to lesson15 project" />
   </component>
 </project>
